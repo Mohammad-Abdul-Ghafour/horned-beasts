@@ -2,6 +2,7 @@ import React from 'react'
 
 class Hornedbeast extends React.Component {
     render() {
+        // console.log(this.props)
         return (
             <div>
                 <h2>{this.props.title}</h2>

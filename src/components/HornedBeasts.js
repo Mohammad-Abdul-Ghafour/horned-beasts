@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import './HornedCSS.css'
+import './HornedCSS.css';
 
 class Hornedbeast extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             nomberOfLikes: 0
-        }
+        };
     }
 
     handelClicks = () => {
-        this.setState({ nomberOfLikes: this.state.nomberOfLikes + 1 })
+        this.setState({ nomberOfLikes: this.state.nomberOfLikes + 1 });
     }
 
     render() {
@@ -41,7 +41,7 @@ class Hornedbeast extends React.Component {
                 </Card>
 
             </div>
-        )
+        );
     }
 }
-export default Hornedbeast
+export default Hornedbeast;

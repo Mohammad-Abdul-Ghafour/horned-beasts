@@ -1,0 +1,16 @@
+#btnDiv{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#btnDiv p{
+margin-top: auto;
+margin-bottom: auto;
+}
+#hornContainer{
+    margin-top: 40px;
+}
+.imgCss{
+    width: 100%;
+    height: 250px;
+}

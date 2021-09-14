@@ -4,26 +4,34 @@ import './Main.css';
 import Selectedbeast from './SelectedBeast';
 
 class Main extends React.Component {
-    constructor() {
-        super(props)
+    constructor(props) {
+        super(props);
         this.state = {
             show: false,
-        }
+            selectedBeast : {}
+        };
     }
 
     handleShow = () => {
-        this.setState ({
-            show : true
-        })
+        this.setState({
+            show: !this.state.show
+        });
     }
+
+    handleSelectedBeast = (title) => {
+        console.log(title);
+        let selectedBeast = this.props.beasrArray.find(element => element.title === title);
+        console.log(selectedBeast);
+        this.setState({selectedBeast : selectedBeast});
+    }
+
 
     render() {
         let beasrArray = this.props.beasrArray;
         let newArray = beasrArray.map((element, index) => {
             return (<Hornedbeast
                 handleShow={this.handleShow}
-                // handleHide={this.props.handleClose}
-                // showState={this.props.showState}
+                handleSelectedBeast={this.handleSelectedBeast}
                 key={index} title={element.title}
                 image_url={element.image_url}
                 description={element.description}
@@ -35,7 +43,7 @@ class Main extends React.Component {
         return (
             <div id='container'>
                 {newArray}
-                <Selectedbeast />
+                <Selectedbeast showState={this.state} onHide={this.handleShow} />
             </div>
         );
 

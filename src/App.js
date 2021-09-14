@@ -7,7 +7,6 @@ import beasrArray from './components/Hornesdata.json';
 
 
 class App extends React.Component {
- 
   render() {
     return (
       <div>

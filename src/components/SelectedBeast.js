@@ -6,41 +6,25 @@ import { Modal } from 'react-bootstrap';
 
 class Selectedbeast extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         show: false
-    //     };
-    // }
+    handle
 
-    handleClose = () => {
-        this.setState({ show: false });
-    }
-
-    // handleShow = () => {
-    //     this.setState({ show: true });
-    // }
     render() {
         // console.log(this.props)
 
-
         return (
             <div>
-
-
-                <Modal show={this.props.showState} onHide={this.handleClose}>
+                <Modal show={this.props.showState.show} onHide={this.props.onHide}>
                     <Modal.Header closeButton>
-                        <Modal.Title>{this.props.title}</Modal.Title>
+                        <Modal.Title>{this.props.showState.selectedBeast.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <img width='300' src={this.props.img} alt={this.props.title} />
-                        {console.log(1111)}
+                        <img width='100%' src={this.props.showState.selectedBeast.image_url} alt={this.props.showState.selectedBeast.title}/>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleClose}>
+                        <Button variant="secondary" onClick={this.props.onHide}>
                             Close
                         </Button>
-                        <Button variant="primary" onClick={this.handleClose}>
+                        <Button variant="primary" onClick={this.props.onHide}>
                             Save Changes
                         </Button>
                     </Modal.Footer>

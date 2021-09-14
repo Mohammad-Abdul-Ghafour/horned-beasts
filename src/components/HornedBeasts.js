@@ -27,8 +27,8 @@ class Hornedbeast extends React.Component {
             <div id='hornContainer'>
 
 
-                <Card onClick={this.handelOnClick} style={{ width: '18rem', height: '30rem' }}>
-                    <Card.Img variant="top" src={this.props.image_url} alt={this.props.keyword} title={this.props.keyword} className='imgCss' />
+                <Card  style={{ width: '18rem', height: '30rem' }}>
+                    <Card.Img onClick={this.handelOnClick} variant="top" src={this.props.image_url} alt={this.props.keyword} title={this.props.keyword} className='imgCss' />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>INFO :

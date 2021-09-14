@@ -24,9 +24,9 @@ class Selectedbeast extends React.Component {
                         <Button variant="secondary" onClick={this.props.onHide}>
                             Close
                         </Button>
-                        <Button variant="primary" onClick={this.props.onHide}>
+                        {/* <Button variant="primary" onClick={this.props.onHide}>
                             Save Changes
-                        </Button>
+                        </Button> */}
                     </Modal.Footer>
                 </Modal>
 

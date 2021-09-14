@@ -25,9 +25,7 @@ class Hornedbeast extends React.Component {
         // console.log(this.props)
         return (
             <div id='hornContainer'>
-
-
-                <Card  style={{ width: '18rem', height: '30rem' }}>
+                <Card style={{ width: '18rem', height: '30rem' }}>
                     <Card.Img onClick={this.handelOnClick} variant="top" src={this.props.image_url} alt={this.props.keyword} title={this.props.keyword} className='imgCss' />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>

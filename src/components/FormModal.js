@@ -15,7 +15,7 @@ class Formmodal extends React.Component {
     render() {
         return (
             <div>
-                <Form style={{width:"30%",marginLeft:"100px"}} onChange={this.selectedNumber}>
+                <Form style={{width:'30%',marginLeft:'100px'}} onChange={this.selectedNumber}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Filter</Form.Label>
                         <Form.Select aria-label="Default select example">

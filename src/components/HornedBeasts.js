@@ -28,15 +28,15 @@ class Hornedbeast extends React.Component {
             <div id='hornContainer'>
                 <Card style={{ width: '18rem', height: '30rem' }}>
                     <Card.Img onClick={this.handelOnClick} variant="top" src={this.props.image_url} alt={this.props.keyword} title={this.props.keyword} className='imgCss' />
-                    <Card.Body>
+                    <Card.Body className='classBody'>
                         <Card.Title>{this.props.title}</Card.Title>
-                        <Card.Text>INFO :
+                        <Card.Text className='cardText'>INFO :
                             {this.props.description}
                             <br />
                             Number of Horns : {this.props.horns}
                         </Card.Text>
                         <div id='btnDiv'>
-                            <Button onClick={this.handelClicks} variant="primary">Like</Button>
+                            <Button className='btn' onClick={this.handelClicks} variant="primary">Like</Button>
                             <p>{this.state.nomberOfLikes} ❤️</p>
                         </div>
                     </Card.Body>

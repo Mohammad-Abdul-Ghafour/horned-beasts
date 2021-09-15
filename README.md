@@ -54,11 +54,11 @@ Actual time needed to complete: 2 Hour
 
 Number and name of feature: Forms and Filter
 
-Estimate of time needed to complete: 1 Hour
+Estimate of time needed to complete: 30 Minute
 
 Start time: 2:30 PM
 
-Finish time: 3:30 PM
+Finish time: 3:00 PM
 
 Actual time needed to complete: 30 Minute
 

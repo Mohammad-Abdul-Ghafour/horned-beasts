@@ -1,16 +1,33 @@
 #btnDiv{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 3%;
 }
 #btnDiv p{
 margin-top: auto;
 margin-bottom: auto;
 }
+/* #btnDiv{
+    height: 100%;
+} */
 #hornContainer{
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .imgCss{
     width: 100%;
-    height: 250px;
+    height: 240px;
 }
+.card{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .cardText{
+    height: 90px;
+} */

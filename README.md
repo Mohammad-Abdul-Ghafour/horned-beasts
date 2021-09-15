@@ -50,3 +50,16 @@ Actual time needed to complete: 2 Hour
 
 -----------------------------------------------------
 
+# Lab 04
+
+Number and name of feature: Forms and Filter
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 2:30 PM
+
+Finish time: 3:30 PM
+
+Actual time needed to complete: 30 Minute
+
+-----------------------------------------------------
